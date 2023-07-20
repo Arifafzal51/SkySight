@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'ubuntu',sans-serif;
+    box-sizing:border-box ;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  
+}
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
+
+    
+     color: #fff;
+     margin: 100px auto 0;
+     border-radius: 20px;
+     padding: 40px 35px;
+     text-align: center;
+     /* background: rgba(186,214,223,0.25);
+-webkit-backdrop-filter: blur(7px);
+backdrop-filter: blur(7px);
+border: 1px solid rgba(186,214,223,0.125); */
+background: rgba(255,255,255,0.15);
+-webkit-backdrop-filter: blur(4px);
+backdrop-filter: blur(4px);
+
+
+
+}
+
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    background: rgba(177, 203, 230, 0.4);
+-webkit-backdrop-filter: blur(22px);
+backdrop-filter: blur(22px);
+border: 1px solid rgba(73, 113, 156, 0.2);
+
+
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    
+}
+
+.search button img{
+    width: 15px;
+}
+
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0,20px;
+    margin-top: 50px;
+
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity,.wind{
+    font-size: 28px;
+    margin-top: -6px    ;
+}
+.weather{
+    display: none;
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Align the footer at the bottom of the container */
+    min-height: 10vh; /* Adjust the height of the footer container */
+    background-color: transparent; /* Set the background of the container to transparent */
+    padding: 20px;
+}
+
+.linkcard {
+    background: rgba(255,255,255,0.05);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    border: 1px solid rgba(255,255,255,0.025);
+    border-radius: 8px; /* Add border-radius to make it look like a card */
+    padding: 15px; /* Add padding to the card */
+     /* Add a box shadow for a slight elevation effect */
+
+     display: flex;
+     align-items: center;
+}
+
+
+
+/* ... Your existing CSS rules ... */
+
+.content {
+    flex-grow: 1; /* Allow the content to grow and push the footer to the bottom */
+    margin-bottom: 80px; /* Add margin at the bottom to create space for the footer */
+    position: relative; /* Add position relative to control z-index */
+    z-index: 1; /* Set z-index higher than the footer to avoid overlapping */
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Align the footer at the bottom of the container */
+    min-height: 10vh; /* Adjust the height of the footer */
+    background-color: transparent; /* Set the background of the container to transparent */
+    padding: 20px;
+    position: relative; /* Add position relative to control z-index */
+    z-index: 2; /* Set z-index higher than the content to avoid overlapping */
+}
+
+.linkcard {
+    background: rgba(255,255,255,0.05);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    border: 1px solid rgba(255,255,255,0.025);
+    border-radius: 8px; /* Add border-radius to make it look like a card */
+    padding: 15px; /* Add padding to the card */
+    /* Add a box shadow for a slight elevation effect */
+
+    display: flex;
+    align-items: center;
+}
+
+.linkcard {
+    display: flex;
+    flex-direction: column; /* Change the display to stack the elements vertically */
+    align-items: center;
+    margin: 10px; /* Add margin to create spacing between the footer content and surrounding elements */
+}
+
+.linkcard h4 {
+    margin: 0;
+}
+
+.linkcard img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.linkcard a {
+    text-decoration: none;
+    color: #fff; /* Set the link color */
+    font-weight: bold;
+}
+
+.linkcard a:hover {
+    color: #000000; /* Set the link color on hover */
+}
+
+
+/* .footer{
+    color: #fff;
+}
+
+
+h1 {
+    margin: 0; 
+    padding: 0px;
+    text-align: center; 
+}
+
+h1 img {
+    width: 700px; 
+    height: auto; 
+}
+.card {
+    padding-bottom: 20px; 
+} */
+
+
