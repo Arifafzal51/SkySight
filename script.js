@@ -48,7 +48,7 @@ async function checkWeather(city) {
       } 
 
       else if (data.weather[0].main == "Rain") {
-        weatherIcon.src = "svg/rain.png";
+        weatherIcon.src = "svg/rain.svg";
         document.body.style.backgroundImage = "url('https://images.pexels.com/photos/913807/pexels-photo-913807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')"; 
       }
       
@@ -66,6 +66,11 @@ async function checkWeather(city) {
       else if (data.weather[0].main == "Haze" && "Clouds" ) {
         weatherIcon.src = "svg/mist.png";
         document.body.style.backgroundImage = "url('https://miro.medium.com/v2/resize:fit:4800/format:webp/1*PzfE18BkPw6luo7YW7c9XQ.jpeg')"; 
+      }
+      
+      else if (data.weather[0].main == "Snow") {
+        weatherIcon.src = "svg/snow.png";
+        document.body.style.backgroundImage = "url('https://images.pexels.com/photos/3462588/pexels-photo-3462588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')"; 
       }
       
       else {
