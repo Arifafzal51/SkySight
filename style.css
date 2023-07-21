@@ -13,6 +13,8 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
+    
   
 }
 
@@ -65,7 +67,7 @@ backdrop-filter: blur(4px);
 backdrop-filter: blur(22px);
 border: 1px solid rgba(73, 113, 156, 0.2);
 
-
+text-align: center;
 }
 
 .search button{
@@ -242,3 +244,85 @@ h1 img {
 } */
 
 
+@media (max-width: 600px) {
+    .search {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .search input {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .search button {
+        width: 70%;
+        max-width: 200px; /* Set a maximum width if necessary */
+        height: 50px;
+        display: flex;
+        justify-content: center; /* Center the button horizontally */
+        align-items: center; /* Center the button vertically */
+        margin: 0 auto; /* Add this line to center the button */
+      }
+  
+    .search button img {
+      width: 12px;
+    }
+  }
+
+
+
+  @media (max-width: 600px) {
+    .linkcard {
+      flex-direction: column; /* Change the display to stack the elements vertically */
+      align-items: center;
+      margin: 10px; /* Add margin to create spacing between the footer content and surrounding elements */
+      text-align: center; /* Center the text content */
+    }
+  
+    .linkcard h4 {
+      margin-top: 10px; /* Add some spacing between the icon and the title */
+    }
+  
+    .linkcard img {
+      margin-bottom: 5px; /* Add some spacing between the icon and the text */
+    }
+  }
+
+
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Correct the padding syntax */
+    margin-top: 50px;
+  }
+  
+  .col {
+    display: flex;
+    align-items: center;
+  }
+  
+  .col img {
+    width: 40px;
+    margin-right: 10px;
+  }
+  
+  .humidity,
+  .wind {
+    font-size: 28px;
+    margin-top: -6px;
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
+  /* Optional: To make it more responsive on smaller screens */
+  @media (max-width: 600px) {
+    .details {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .col {
+      margin-bottom: 10px; /* Add spacing between the .col elements */
+    }
+  }
